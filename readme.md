@@ -2,21 +2,21 @@
 This is an unofficial PHP SDK for the [PhonePe API](https://developer.phonepe.com/docs). It is a work in progress and is not yet ready for production use.
 
 In short, PhonePe Gateway provides the following four payment solutions. Let's view the images below to understand the flow of each payment solution.
- - [x] PG Standard Checkout (Done)
- PhonePe provides a Standard Checkout page that is hosted by PhonePe PG. This handles payment information and processing for UPI, Cards, and Netbanking payment methods. PhonePe PG Hosted Checkout Page is PCI DSS compliant.
+ ### [x] PG Standard Checkout (Done)
+ - PhonePe provides a Standard Checkout page that is hosted by PhonePe PG. This handles payment information and processing for UPI, Cards, and Netbanking payment methods. PhonePe PG Hosted Checkout Page is PCI DSS compliant.
  ![Standard Checkout](docs/standard-checkout.png)
 
- - [ ] PG Custom Checkout (Pending)
- PhonePe provides an option for merchants who have their own checkout page and want PhonePe PG to process payments via various payment methods like UPI, Cards, and Netbanking. This is a simple API-based integration where the merchant can call the PhonePe PG API and get the payment processed.
+ ### [ ] PG Custom Checkout (Pending)
+ - PhonePe provides an option for merchants who have their own checkout page and want PhonePe PG to process payments via various payment methods like UPI, Cards, and Netbanking. This is a simple API-based integration where the merchant can call the PhonePe PG API and get the payment processed.
  ![Custom Checkout](docs/custom-checkout.png)
 
- - [ ] Recurring Payments (Pending)
- Kind of subscription/e-mandate for recurring payments.
+ ### [ ] Recurring Payments (Pending)
+ - Kind of subscription/e-mandate for recurring payments.
 ![Recurring Payments](docs/recurring-checkout-1.jpeg)
 ![Recurring Payments](docs/recurring-checkout-2.jpeg)
 
- - [ ] Android PG SDK (Unplanned)
- As the name suggests, this is an SDK for Android Apps.
+ ### [ ] Android PG SDK (Unplanned)
+ - As the name suggests, this is an SDK for Android Apps.
 
 ## Contributing
 Pull requests are more than welcome. Since I am using Standard Checkout, I am creating that; however, since the structure is already ready, you can create other payment methods as well.
