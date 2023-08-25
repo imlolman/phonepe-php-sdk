@@ -56,7 +56,10 @@ $amountInPaisa = 100; // Amount in Paisa
 $userMobile = "9999999999"; // User Mobile Number
 $transactionID = "MERCHANT".rand(100000, 999999); // Transaction ID to track and identify the transaction, make sure to save this in your database.
 
-$redirectURL = $phonepe->standardCheckout()->createTransaction(100, "9999999999", "MERCHANT".rand(100000, 999999))->getTransactionURL();
+$redirectURL = $phonepe->standardCheckout()->createTransaction($amountInPaisa, $userMobile, $transactionID)->getTransactionURL();
+
+// You can also define the redirect and callback URL on per transaction basis
+// $redirectURL = $phonepe->standardCheckout()->createTransaction($amountInPaisa, $userMobile, $transactionID, "https://webhook.site/f7b80fd4-dc89-49a5-b569-d9d0a10b19c8", "https://webhook.site/f7b80fd4-dc89-49a5-b569-d9d0a10b19c8")->getTransactionURL();
 
 echo "Redirect URL: ".$redirectURL.PHP_EOL;
 header("Location: ".$redirectURL);
