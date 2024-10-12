@@ -42,9 +42,9 @@ use PhonePe\PhonePe;
 
 // Below are the Test Details for Standard Checkout UAT, you can get your own from PhonePe Team. Make sure to keep the Salt Key and Salt Index safe (in environment variables or .env file).
 $phonepe = PhonePe::init(
-    "MERCHANTUAT", // Merchant ID
+    "PGTESTPAYUAT86", // Merchant ID
     "MUID123", // Merchant User ID
-    "099eb0cd-02cf-4e2a-8aca-3e6c6aff0399", // Salt Key
+    "96434309-7796-489d-8924-ab56988a6076", // Salt Key
     "1", // Salt Index
     "https://webhook.site/f7b80fd4-dc89-49a5-b569-d9d0a10b19c8", // Redirect URL, can be defined on per transaction basis
     "https://webhook.site/f7b80fd4-dc89-49a5-b569-d9d0a10b19c8", // Callback URL, can be defined on per transaction basis
